@@ -1,0 +1,141 @@
+/* Estilos Gerais do Porjeto ou Estilos Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2A7B9B;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 70%, rgba(237, 221, 83, 1) 100%);
+}
+
+.container {
+    background-color: #fff;
+    min-height: 100vh;
+    width: 50vw;
+    border-radius: 11px;
+    padding: 5rem;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    box-shadow:0px 4px 6px -1px rgba(0, 0, 0, 0.15);
+}
+
+/* header */
+#qr-header {
+    text-align: center;
+}
+
+#qr-header h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+#qr-header p {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* FORM */
+#qr-form {
+    margin: 20px 15px;
+}
+
+#qr-form input,
+#qr-form button {
+    width: 100%;
+    height: 55px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    outline: 0;
+    padding: 1rem 0;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+#qr-form input:focus-visible,
+#qr-form button:focus-visible {
+    border: 2px solid rgba(42, 123, 155, 1);
+    box-shadow: 5px 6px 220px rgba(42, 123, 155, 1);
+    overflow: hidden;
+} 
+
+#qr-form input {
+    border: 1px solid #777;
+    padding: 10px 15px;
+}
+
+#qr-form button {
+    background-color: rgba(87, 199, 133, 1);
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: 20px;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+#qr-form button:hover {
+    background-color:  rgba(42, 123, 155, 1);
+    transform: scale(1.02);
+}
+
+#qr-code {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 30px 0;
+    margin: 20px 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#qr-code img {
+    max-width: 50%;
+    height: 35%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+#qr-code figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.container.active #qr-code {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-top: 11rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+}

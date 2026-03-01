@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QR Code</title>
+     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/qr-code-svgrepo-com.png" type="image/x-icon">
+    <!--Toastify-notifications JS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header id="qr-header">
+            <h1>Gerador de QR Code</h1>
+            <p>Insira uma URL ou texto, para criar um QR Code.</p>
+        </header>
+        <main>
+            <div id="qr-form">
+                <input 
+                    id="qr-input"
+                    type="text"
+                    placeholder="Digite a URL ou texto para a geração da imagem do QR Code" 
+                    />
+                <button>Gerar QR Code</button>
+            </div>
+            <div id="qr-code">
+                <figure>
+                    <img src="./images/bit.ly_48RdBlv.png" alt="Imagem QR Code gerada dinamicamente via Javascript e comunicação com a QR Code API." />
+                    <figcaption>Imagem QR Code gerada dinamicamente via Javascript e comunicação com a QR Code API.</figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy;Matheus Battisti 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
